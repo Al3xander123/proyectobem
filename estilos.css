@@ -89,6 +89,7 @@ div.Mis__Productos{
 	height:98%;
 	border: 3px solid yellow;
 	overflow:hidden;
+vertical-align: top;
 }
 
 .div_productos{
