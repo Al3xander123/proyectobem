@@ -3,45 +3,45 @@ $(document).ready(function(){
 let time = 100;
 
 $(".menu").fadeOut(time);
-$(".s_televisores,.s_equipos_de_sonido,.s_computadoras").fadeOut(time);
-$(".div_productos").fadeOut(time);
-$(".div_televisores").fadeIn(100);
-$(".principal").fadeIn(time);
+$(".s_televisores,.s_equipos_de_sonido,.s_computadoras").slideUp(time);
+$(".div_productos").slideUp(time);
+$(".div_televisores").slideDown(100);
+$(".principal").slideDown(time);
 
 /*CLICK MENU PRINCIPAL*/
 $(".principal").click(function(){
-	$(".s_televisores,.s_equipos_de_sonido,.s_computadoras").fadeOut(time);
+	$(".s_televisores,.s_equipos_de_sonido,.s_computadoras").slideUp(time);
 	$(".tag").css("background-color","white");
 	$(".televisores,.equipos_de_sonido,.computadoras").slideToggle(time);
 });
 
 /*CLICK SUB MENU TELEVISOR*/
 $(".televisores").click(function(){
-	$(".s_equipos_de_sonido,.s_computadoras").fadeOut(time);
-	$(".div_equipos_de_sonido,.div_computadoras").fadeOut(time);
+	$(".s_equipos_de_sonido,.s_computadoras").slideUp(time);
+	$(".div_equipos_de_sonido,.div_computadoras").slideUp(time);
 	$(".tag").css("background-color","white");
 		
-	$(".s_televisores").fadeIn(time);
-	$(".div_televisores").fadeIn(time);
+	$(".s_televisores").slideDown(time);
+	$(".div_televisores").slideDown(time);
 });
 
 /*CLICK SUB MENU EQUIPOS DE SONIDO*/
 $(".equipos_de_sonido").click(function(){
-	$(".s_televisores,.s_computadoras").fadeOut(time);
-	$(".div_televisores,.div_computadoras").fadeOut(time);
+	$(".s_televisores,.s_computadoras").slideUp(time);
+	$(".div_televisores,.div_computadoras").slideUp(time);
 	$(".tag").css("background-color","white");
 	
-	$(".s_equipos_de_sonido").fadeIn(time);
-	$(".div_equipos_de_sonido").fadeIn(time);
+	$(".s_equipos_de_sonido").slideDown(time);
+	$(".div_equipos_de_sonido").slideDown(time);
 });
 /*CLICK SUB MENU COMPUTADORAS*/
 $(".computadoras").click(function(){
-	$(".s_televisores,.s_equipos_de_sonido").fadeOut(time);
-	$(".div_televisores,.div_equipos_de_sonido").fadeOut(time);
+	$(".s_televisores,.s_equipos_de_sonido").slideUp(time);
+	$(".div_televisores,.div_equipos_de_sonido").slideUp(time);
 	$(".tag").css("background-color","white");
 	
-	$(".s_computadoras").fadeIn(time);
-	$(".div_computadoras").fadeIn(time);
+	$(".s_computadoras").slideDown(time);
+	$(".div_computadoras").slideDown(time);
 });
 
 /*SELECCIONANDO UNA MARCA DE TV*/
