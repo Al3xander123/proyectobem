@@ -39,6 +39,7 @@ table{
 
 td{
 	border:var(--table__td__border);
+vertical-align: top;
 }
 
 td:nth-child(0){
