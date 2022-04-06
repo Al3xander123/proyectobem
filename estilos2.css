@@ -151,9 +151,6 @@ place-items:center;
 	max-width:55em;
 	margin: 5px;
 	margin: 10px;
-	resize:auto;
-	overflow:scroll;
-	overflow:hidden;
 	
 	display:flex;
 	flex-wrap:wrap;
