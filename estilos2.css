@@ -1,0 +1,187 @@
+:root{
+	/*COLORES*/
+	--html__color:black;
+	--body__color:brown;
+	--table__color:red;
+	--table__td__color:orange;
+	/*BORDERS*/
+	--html__border: 3px solid var(--html__color);
+	--body__border: 3px solid var(--body__color);
+	--table__border:3px solid var(--table__color);
+	--table__td__border: 3px solid var(--table__td__color);
+	/*ALTURAS*/
+	--html__height:98%;
+	--body__height:98%;
+	--table__height:98%;
+	/*ANCHURAS*/
+	--html__width:98%;
+	--body__width:98%;
+	--table__width:98%;
+}
+
+html{
+	height:var(--html__height);
+	width:var(--html__width);
+	border:var(--html__border);
+}
+body{
+	height:var(--body__height);
+	width:var(--body__width);
+	border:var(--body__border);
+	/*overflow-y:scroll;*/
+}
+
+table{
+	height:var(--table__height);
+	width:var(--table__width);
+	border:var(--table__border);	
+}
+/*tabla t-principal*/
+
+
+
+td{
+	border:var(--table__td__border);
+	vertical-align: top;
+}
+
+.tabla__td-uno{
+	width:100%;
+	height:60px;
+	margin:auto;
+	text-align:center;
+	}
+.tabla__td-dos{
+	width:20%;
+	}
+.tabla__td-tres{
+	width:80%;
+	overflow:hidden;
+	}
+.tabla__td-cuatro{
+	height:50px;
+	text-align:center;
+	width:100%;
+	}
+
+
+div.titulo{
+	text-align:center;
+}
+
+div.Mi__Presentacion{
+	font-size:12px;
+	text-align:center;
+	margin: 2px 2px 2px 2px;
+}
+
+.div_productos{
+	/*width:98%;*/
+	height:98%;
+	display:grid;
+	place-items:center;
+	border: 2px solid black;
+	padding: 0em 0em 0em 0em;
+	margin: 0em 0em 0em 0em;
+}
+
+.productos{
+	
+}
+
+.tag{
+	width:8em;
+	height:8em;
+	border: 2px solid black;
+	margin: 0em 0em 0em 0em;
+	padding: 1em 1em 1em 1em;
+}
+
+ul{
+	border: 0px solid black;
+}
+li{
+	border: 1px solid black;
+}
+
+ul,li{
+	cursor:pointer;
+	list-style-type:none;
+	/*border: 1px solid black;*/1
+	padding-left: 1em;
+/*	transition-duration:0.1s;*/
+}
+.menu_principal{
+	width: 10em;
+}
+ul.menu{width:19m;}
+li:hover{background-color:grey;}
+
+/*TITULOS DE LOS MENUS CENTRALES*/
+
+.productos__contenedor{
+	width:98%;
+	height:98%;
+	border: 3px solid blue;
+	overflow-y:hidden;
+vertical-align: top;
+}
+
+.productos__titulo{
+	font-family:Courier New;
+	font-size:25px;
+	font-weight:bold;
+}
+
+.productos__lista{
+	border: 1px solid black;
+	/*display:grid;*/
+/*	justify-content:center;*/
+place-items:center;
+	grid-template: auto / auto auto auto;
+	width: 98%;
+	min-width:11em;
+	max-width:55em;
+	height:98%;
+	margin: 5px;
+	margin: 10px;
+	/*
+	resize:auto;*/
+	overflow:scroll;
+	overflow:hidden;
+	
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+}
+
+.card {
+	width:19em;
+	height:8em;
+	min-width:8em;
+	max-width:10em;
+	border: 2px solid black;
+	/*font-size:12px;*/
+	padding: 1em 1em 1em 1em;
+	flex: 1 1 8em;
+	margin:10px;
+}
+
+:root{
+	--fuente:monospace;
+	--fontSize:15px;
+}
+
+.card__marca,.card__tamaño,.card__precio{font-family:var(--fuente);font-size:var(--fontSize);}
+.card__tamaño{}
+.card__img{
+	width:5em;
+	height:4em;
+}
+
+.card__precio{}
+
+.div_equipos_de_sonido,.div_computadoras{display:none;}*
+
+/*MARCAS DE EQUIPOS*/
+.card_img-src{background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/LG_logo_%282015%29.svg/250px-LG_logo_%282015%29.svg.png");}
